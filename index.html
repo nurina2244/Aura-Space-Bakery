@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile App</title>
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- jQuery & jQuery Mobile JS -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css"/>
+    <!--JS-->
+    <script src="script/script.js"></script>
+</head>
+<body>
+<!--HOME PAGE-->
+<div data-role="page" id="home">
+    <!--HEADER-->
+    <div data-role="header" data-theme="b">
+        <h1>Aura Space</h1>
+    </div>
+    
+    <!--Navigation-->
+    <div data-role="navbar">
+        <ul>
+            <li> 
+                <a href="#home" class="ul-btn-active" data-icon="home">Home</a>
+            </li>
+            <li>
+                <a href="#products" data-icon="shop">Products</a>
+            </li>
+            <li>
+                <a href="#contact" data-icon="phone">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Content-->
+    <div data-role="content">
+        <h2>Welcome To Our Bakery!</h2>
+
+        <p>We offer freshly baked cakes, pastries, and breads made with love everyday.</p>
+
+        <h3>Feature Items</h3>
+
+        <!--Card Grid-->
+        <div class="card-grid">
+            
+            <!--Card 1-->
+            <div class="card">
+                <img src="img/cupcake.jpg" alt="Mini Cupcakes">
+                <h3>Mini Cupcakes</h3>
+                <p>Perfect bite-sized treats with colourful frosting and springkle</p>
+            </div>
+            
+            <!--Card 2-->
+            <div class="card">
+                <img src="img/artisanbread.jpg" alt="Artisan Bread">
+                <h3>Artisan Bread</h3>
+                <p>Handcrafted crusty bread baked fresh every morning</p>
+            </div>
+            
+            <!--Card 3-->
+            <div class="card">
+                <img src="img/cookies.jpg" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Soft and chewy cookies in a variety of flavours</p>
+            </div>
+            
+            <!--Card 4-->
+            <div class="card">
+                <img src="img/cake.jpg" alt="Cakes">
+                <h3>Cakes</h3>
+                <p>Custom cakes for all occasions</p>
+            </div>
+            
+            <!--Card 5-->
+            <div class="card">
+                <img src="img/croissant.jpg" alt="Croissants">
+                <h3>Croissants</h3>
+                <p>Buttery, flaky croissants fresh from the oven</p>
+            </div>
+            
+            <!--Card 6-->
+            <div class="card">
+                <img src="img/pastry.jpg" alt="Pastries">
+                <h3>Pastries</h3>
+                <p>Flaky pastries with a variety of fillings</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div data-role="footer" data-theme="b">
+        <h4 class="footer-text">&copy; 2024 Aura Space Bakery</h4>
+    </div>
+</div>
+
+<!--PRODUCTS PAGE-->
+<div data-role="page" id="products">
+    <!--HEADER-->
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+        <h1>Our Products</h1>
+    </div>
+    <!--Navigation-->
+    <div data-role="navbar">
+        <ul>
+            <li> 
+                <a href="#home" data-icon="home">Home</a>
+            </li>
+            <li>
+                <a href="#products" class="ul-btn-active" data-icon="shop">Products</a>
+            </li>
+            <li>
+                <a href="#contact" data-icon="phone">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!--Product Content-->
+    <div data-role="main" class="ui-content">
+        <h2>Our Products</h2>
+        <p>
+            Click on any product to learn more!
+        </p>
+    </div>
+    <!--Product List-->
+    <ul data-role="listview" data-inset="true" class="product-list">
+        <!--Chocolate Cake-->
+        <li>
+            <a href="8" class="product-items">
+                <img src="img/cake.jpg" alt="Cake">
+                <h2 class="product-name">Chocolate Cake</h2>
+                <p class="product-description">
+                    Rich and moist chocolate cake with a creamy chocolate frosting
+                </p>
+            </a>
+        </li>
+
+        <!--Butter Croissant-->
+        <li>
+            <a href="9" class="product-items">
+                <img src="img/croissant.jpg" alt="Croissant">
+                <h2 class="product-name">Butter Croissant</h2>
+                <p class="product-description">
+                    Buttery, flaky croissants fresh from the oven
+                </p>
+            </a>
+        </li>
+        <!--Vanilla Cupcake-->
+        <li>
+            <a href="10" class="product-items">
+                <img src="img/cupcake.jpg" alt="Cupcake">
+                <h2 class="product-name">Vanilla Cupcake</h2>
+                <p class="product-description">
+                    Moist vanilla cupcake with a creamy vanilla frosting
+                </p>
+            </a>
+        </li>
+
+        <!--Chocolate Cookies-->
+        <li>
+            <a href="11" class="product-items">
+                <img src="img/cookies.jpg" alt="Cookies">
+                <h2 class="product-name">Chocolate Cookies</h2>
+                <p class="product-description">
+                    Soft and chewy chocolate cookies with chocolate chips
+                </p>
+            </a>
+        </li>
+        <!--Artisan Bread-->
+        <li>
+            <a href="12" class="product-items">
+                <img src="img/artisanbread.jpg" alt="Artisan Bread">
+                <h2 class="product-name">Artisan Bread</h2>
+                <p class="product-description">
+                    Handcrafted crusty bread baked fresh every morning
+                </p>
+            </a>
+        </li>
+        <!--Flaky Pastry-->
+        <li>
+            <a href="13" class="product-items">
+                <img src="img/pastry.jpg" alt="Pastry">
+                <h2 class="product-name">Flaky Pastry</h2>
+                <p class="product-description">
+                    Flaky pastries with a variety of fillings
+                </p>
+            </a>
+        </li>
+    </ul>
+
+    <!--Footer-->
+    <div data-role="footer" data-theme="b">
+        <h4 class="footer-text">&copy; 2024 Aura Space Bakery</h4>
+    </div>
+</div>
+
+</body>
+</html>
