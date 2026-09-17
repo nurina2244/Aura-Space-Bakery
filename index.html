@@ -199,5 +199,57 @@
     </div>
 </div>
 
+<!--Contact Page-->
+<div data-role="page" id="contact">
+    <!--HEADER-->
+    <div data-role="header" data-theme="b">
+        <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+        <h1>Contact Us</h1>
+    </div>
+
+    <!--Navigation-->
+    <div data-role="navbar">
+        <ul>
+            <li>
+                <a href="#home" data-icon="home">Home</a>
+            </li>
+            <li>
+                <a href="#products" data-icon="shop">Products</a>
+            </li>
+            <li>
+                <a href="#contact" class="ul-btn-active" data-icon="phone">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Contact Content-->
+    <div data-role="content">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Please fill out the form below.</p>
+
+        <!--Contact Form-->
+        <form id="contactform">
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <!--Message-->
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+
+            <!--Submit-->
+            <input type="submit" value="Send Message" data-inline="b">
+        </form>
+    </div>
+    
+    <!--Footer-->
+    <div data-role="footer" data-theme="b" data-position="fixed" data-tap-toggle="false">
+        <h4 class="footer-text">&copy; 2024 Aura Space Bakery</h4>
+    </div>
+</div>
 </body>
 </html>
